@@ -119,7 +119,8 @@ server <- function(input, output, session) {
     
     paste0(
       "5' flank:\n", x$seq$five_prime_flank,
-      "\n\n3' flank:\n", x$seq$three_prime_flank
+      "\n\n3' flank:\n", x$seq$three_prime_flank,
+      "\n\n", paste0(x$seq$five_prime_flank, x$seq$three_prime_flank)
     )
   })
 }
